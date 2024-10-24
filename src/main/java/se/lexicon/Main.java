@@ -26,8 +26,15 @@ public class Main {
         System.out.println("Size of Array::"+ NameRepository.getSize());
 
         //returns empty array
-        NameRepository.clear();
+       //* NameRepository.clear();
         System.out.println("Size of Array::"+ NameRepository.getSize());
+
+        System.out.println("Names Arrays of firstNames search"+Arrays.toString(NameRepository.findByFirstName("Simon")));
+        System.out.println("Names Arrays of firstNames search"+Arrays.toString(NameRepository.findByLastName("Svensson")));
+
+        System.out.println("wwwwww"+NameRepository.update("Philip Thomas","Sayana Surendran"));
+        System.out.println(NameRepository.remove("Sayana Surendran"));
+        System.out.println();
 
     }
 }
